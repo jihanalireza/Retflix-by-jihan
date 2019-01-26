@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@drawable/bgdetailmovie"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.detailmovie.DetailMovieActivity">
+    <FrameLayout
+            android:id="@+id/frameWrapper"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+        <android.support.v7.widget.CardView
+                android:id="@+id/detailWrapper"
+                android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="90sp"
+                android:layout_width="350dp"
+                android:layout_height="match_parent">
+            <LinearLayout
+                    android:id="@+id/posterWrapper"
+                    android:layout_below="@id/backdropMovie"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                <android.support.v7.widget.CardView
+                        android:id="@+id/cardMovie"
+                        android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        app:cardElevation="5dp"
+                        app:cardCornerRadius="5dp"
+                        android:layout_width="75dp"
+                        android:layout_height="110dp"
+                        android:layout_marginStart="34dp"
+                        android:layout_marginTop="130dp">
+                    <ImageView
+                            android:id="@+id/posterMovie"
+                            android:src="@drawable/poster"
+                            android:scaleType="centerCrop"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                </android.support.v7.widget.CardView>
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="130dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    <TextView
+                            android:id="@+id/judulMovie"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MOONLIGHT"/>
+                    <TextView
+                            android:id="@+id/ReleaseMovie"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(2019)"/>
+                    <LinearLayout
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        <ImageView
+                                android:src="@drawable/star"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"/>
+
+                        <TextView
+                                android:id="@+id/ratingMovie"
+                                android:text="9.5"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="#000000"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                    <TextView
+                            android:id="@+id/voteCount"
+                            android:text="10000 voutes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="35dp"
+                    android:layout_marginTop="220dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:id="@+id/descriptionMovie"
+                        android:text="Interstellar chronicles the adventures of a group of explorers who make use of a newly discovered wormhole to surpass the limitations on human space travel and conquer the vast distances involved in an interstellar voyage."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </FrameLayout>
+
+    <ImageView
+            android:id="@+id/backdropMovie"
+            android:src="@drawable/poster"
+            android:scaleType="centerCrop"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_width="280dp"
+            android:layout_height="200dp"/>
+
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btnPlay"
+            android:src="@drawable/playbuttonwhite"
+            android:padding="40dp"
+            android:elevation="20dp"
+            android:backgroundTint="#f46161"
+            app:rippleColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="79dp"/>
+    <TextView
+            android:text="Watching Trailer"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="53dp"
+            android:layout_alignBaseline="@+id/btnPlay2"/>
+    <android.support.design.button.MaterialButton
+            android:id="@+id/btnPlay2"
+            app:icon="@drawable/ic_play_24dp"
+            app:cornerRadius="50dp"
+            android:backgroundTint="#e22624"
+            app:rippleColor="#ffffff"
+            android:text="Play now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/backdropMovie"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="38dp"/>
+
+
+</RelativeLayout>

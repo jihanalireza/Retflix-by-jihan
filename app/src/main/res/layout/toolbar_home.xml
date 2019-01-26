@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="#f9f9f9"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+    <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/retflixfont"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="-15dp"
+                android:layout_width="100dp"
+                android:layout_height="30dp"/>
+        <!--<ImageView-->
+                <!--android:background="?attr/selectableItemBackgroundBorderless"-->
+                <!--android:clickable="true"-->
+                <!--android:id="@+id/toolSearch"-->
+                <!--android:src="@drawable/ic_search"-->
+                <!--android:layout_toStartOf="@id/toolChat"-->
+                <!--android:layout_marginTop="15dp"-->
+                <!--android:layout_width="25dp"-->
+                <!--android:layout_height="25dp"/>-->
+
+        <!--<ImageView-->
+                <!--android:background="?attr/selectableItemBackgroundBorderless"-->
+                <!--android:clickable="true"-->
+                <!--android:id="@+id/toolChat"-->
+                <!--android:src="@drawable/ic_search"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_margin="15dp"-->
+                <!--android:layout_width="25dp"-->
+                <!--android:layout_height="25dp"/>-->
+
+
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>
